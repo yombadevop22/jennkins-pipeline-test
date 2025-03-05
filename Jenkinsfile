@@ -28,7 +28,7 @@ pipeline {
     stage('PushImage'){
         steps{
             sh 'docker push 376129840399.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
-            sh 'docker push 376129840399.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:V1.$BUILD_NUMBER'
+            sh 'docker push 376129840399.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:v1.$BUILD_NUMBER'
         }
     }
    }
