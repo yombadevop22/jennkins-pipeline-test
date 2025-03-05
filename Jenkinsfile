@@ -3,7 +3,7 @@ pipeline {
    stages{
     stage('codeSCAN'){
         steps{
-            sh 'trivy --version'
+            sh 'trivy fs . -o result.html'
         
         }
     }
